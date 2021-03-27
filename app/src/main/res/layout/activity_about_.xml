@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_Activity">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/btn_cor_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/student_name_heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@color/yellow"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/toolbarId"
+        android:background="#000"
+        android:text="About"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:layout_below="@id/textView4"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+
+                        android:background="@mipmap/about_final" />
+
+
+                </LinearLayout>  //start
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="Name"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/name_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp"/>
+                </LinearLayout>  //name
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/gender"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/gender_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp"/>
+                </LinearLayout>  //gender
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/email"
+                        android:textAlignment="center"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/email_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp"
+                        android:background="@drawable/aboutshowbody" />
+
+                </LinearLayout>  // email
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/course_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/course"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/course_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  //course
+
+
+                <LinearLayout
+                    android:id="@+id/teacher_id_no_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/teacher_id"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/teacher_id_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  //teacher Id
+
+
+                <LinearLayout
+                    android:id="@+id/teacher_department_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/department"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/teacher_department_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  //department
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/branch_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/branch"
+
+                        android:textAlignment="center"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/branch_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>  // branch
+
+
+                <LinearLayout
+                    android:id="@+id/semester_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:text="@string/semester"
+                        android:textAlignment="center"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/semester_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>  // semester
+
+
+                <LinearLayout
+                    android:id="@+id/section_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/section"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/section_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>   // section
+
+
+
+                <LinearLayout
+                    android:id="@+id/clg_add_no_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/clg_add_no_"
+                        android:textAlignment="center"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/clg_add_no_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>   //clg admission no
+
+
+
+                <LinearLayout
+                    android:id="@+id/add_year_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/add_year"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/add_year_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  // admission year
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/dobS"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/dob_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>   // dob
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/phone_no"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/phone_no_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>   // phone no
+
+
+                <LinearLayout
+                    android:id="@+id/teacher_joining_date_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/joining_date"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/joining_date_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  //joining date
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/father_name"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/father_name_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>   // father name
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/mother_name"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/mother_name_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>   // mother name
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/parent_phone_no_"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/parent_phone_no_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  // parent phone no
+
+
+                <LinearLayout
+                    android:id="@+id/uni_rollno_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/uni_rollno"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/uni_rollno_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>   university rollno
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/p_address"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/p_address_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  // p address
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/l_address"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/l_address_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  // t adress
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/cast"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cast_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  // cast
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/blood_group"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/blood_group_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  // blood group
+
+
+
+                <LinearLayout
+                    android:id="@+id/wife_hus_ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/aboutshowhead"
+                        android:paddingTop="6dp"
+                        android:text="@string/something"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/wife_hus_Body"
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/aboutshowbody"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:text="@string/detailsnotAvailabel"
+                        android:textSize="20sp" />
+                </LinearLayout>  // wife or husband
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

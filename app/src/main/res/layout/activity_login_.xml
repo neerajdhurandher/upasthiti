@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+
+    <ImageView
+        android:id="@+id/logo_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo_1_banner"
+        android:background="@drawable/btn_cor_red"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/aboutshowbody">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+            <Button
+                android:id="@+id/google_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="270dp"
+                android:background="@drawable/google_sigin_btn"/>
+
+            <TextView
+                android:id="@+id/login_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_below="@id/google_button"
+                android:text="Having Login Problem ? click here"
+                android:textColor="@color/black"
+                android:clickable="true"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="340dp"
+                android:layout_marginBottom="20dp"
+                android:buttonTint="@color/yellow"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Accept T_C"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+        <Button
+        android:id="@+id/btn_student"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="120dp"
+        android:text="Student"
+        android:background="@drawable/aboutshowbody"/>
+
+        <Button
+                android:id="@+id/btn_teacher"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/aboutshowbody"
+                android:text="Teacher" />
+
+        <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="73dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="210dp"
+       android:layout_margin="10dp"
+       android:layout_below="@id/logo_banner"
+       >
+
+       <ImageSwitcher
+           android:id="@+id/image_switcher"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginTop="3dp"
+           android:layout_marginEnd="4dp"
+           />
+
+   </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show_tt_Activity">
+
+    <RelativeLayout
+        android:id="@+id/new_tt_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tt_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Time Table"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:background="@color/yellow"/>
+
+        <RelativeLayout
+            android:id="@+id/sem_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tt_heading">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="317dp"
+                android:text="Semester"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sem_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="203dp"
+                android:text="Write Here"
+                android:inputType="number"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="122dp"
+                android:text="Section"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sec_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="19dp"
+                android:text="Write Here"
+                android:inputType="textCapCharacters"
+                android:textSize="15sp"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/break_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem_sec">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Break Start"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/break_start_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Write Here"
+                        android:textSize="15sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Break End"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/break_end_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Write Here"
+                        android:textSize="15sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Short B Start"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/short_break_start_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Write Here"
+                        android:textSize="15sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Short B End"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/short_break_end_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Write Here"
+                        android:textSize="15sp"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/break_sec">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <ScrollView
+
+                android:id="@+id/day_sv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/blue"
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textStyle="bold"
+                            android:textSize="10sp"
+                            android:layout_margin = "10dp"
+                            android:textAlignment="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="0dp"
+                            android:background="@color/white"
+                            android:text="Period No"
+                            />
+
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:padding="10dp"
+                            android:background="@color/white"
+                            android:text="1"
+                            />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:padding="10dp"
+                            android:background="@color/white"
+                            android:text="2"
+                            />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_margin = "10dp"
+                            android:padding="0dp"
+                            android:background="@color/white"
+                            android:text="3"
+                            />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:padding="6dp"
+                            android:background="@color/white"
+                            android:text="4"
+                            />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:padding="10dp"
+                            android:background="@color/white"
+                            android:text="5"
+                            />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:padding="8dp"
+                            android:background="@color/white"
+                            android:text="6"
+                            />
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:padding="8dp"
+                            android:background="@color/white"
+                            android:text="7"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="#DC3232"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:textAlignment="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="0dp"
+                            android:background="@color/white"
+                            android:text="Timing"
+                            />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/timing_recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp" />
+
+
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+
+                        android:id="@+id/day_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/green"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:textAlignment="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="0dp"
+                            android:background="@color/white"
+                            android:text="Monday"
+                            />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/subject_recyclerView_monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp" />
+
+                    </LinearLayout>
+
+                            <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/black"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_margin = "10dp"
+                            android:textAlignment="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="0dp"
+                            android:background="@color/white"
+                            android:text="Tuesday"
+                            />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/subject_recyclerView_tuesday"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp" />
+
+                    </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@color/black"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:layout_margin = "10dp"
+                                    android:textAlignment="center"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="0dp"
+                                    android:background="@color/white"
+                                    android:text="Wednesday"
+                                    />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/subject_recyclerView_wednesday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingTop="10dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@color/black"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:layout_margin = "10dp"
+                                    android:textAlignment="center"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="0dp"
+                                    android:background="@color/white"
+                                    android:text="Thursday"
+                                    />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/subject_recyclerView_thursday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingTop="10dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@color/black"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:layout_margin = "10dp"
+                                    android:textAlignment="center"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="0dp"
+                                    android:background="@color/white"
+                                    android:text="Friday"
+                                    />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/subject_recyclerView_friday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingTop="10dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@color/black"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:layout_margin = "10dp"
+                                    android:textAlignment="center"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="0dp"
+                                    android:background="@color/white"
+                                    android:text="Saturday"
+                                    />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/subject_recyclerView_saturday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingTop="10dp" />
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

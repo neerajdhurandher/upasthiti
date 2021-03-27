@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_stu_B_details"
+    android:layout_margin="5dp"
+   >
+
+    <TextView
+        android:id="@+id/page_heading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Fill Student Details "
+        android:textSize="25sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="5dp"
+        />
+
+    <ScrollView
+        android:id="@+id/stu_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/page_heading"
+        android:background="@drawable/aboutshowbody">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/view_stu_name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Name"
+            android:textSize="18sp"
+            android:background="@drawable/aboutshowhead"
+            android:textColor="@color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+            android:inputType="text"
+
+            />
+
+
+
+            <LinearLayout
+                android:id="@+id/stu_special_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Course "
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+                android:textColor="@color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                />
+            <TextView
+                android:id="@+id/admission_year"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Admission Year"
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                />
+            <TextView
+                android:id="@+id/branch"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Branch "
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="College Admission Number "
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/edit_stu_clg_add_no"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/enter_here_str"
+
+                />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="University Roll Number"
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/edit_stu_uni_roll_no"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/enter_here_str"
+                android:inputType="number"
+                />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Current Semester"
+                    android:textSize="18sp"
+                    android:background="@drawable/aboutshowhead"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edit_current_sem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_here_str"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/aboutshowhead"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Section"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edit_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_here_str"
+                    android:inputType="text"
+                    android:textAllCaps="true"
+                    android:maxLength="1"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/teacher_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Teacher Id "
+                    android:textSize="18sp"
+                   android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/edit_teacher_id_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_here_str"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Department"
+                    android:textSize="18sp"
+                   android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edit_teacher_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_here_str"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Joining Date"
+                    android:textSize="18sp"
+                   android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edit_teacher_joining_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_here_str"
+                    android:inputType="date"
+                    />
+
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_stu_dob"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Date of Birth"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_dob"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="@string/enter_here_str"
+            android:inputType="date" />
+
+            <TextView
+                android:id="@+id/view_stu_gender"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Gender"
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_stu_gender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Male 0r Female"
+                android:inputType="text" />
+
+        <TextView
+            android:id="@+id/view_stu_phone"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Phone no"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+            android:inputType="phone"
+
+            />
+
+        <TextView
+            android:id="@+id/view_stu_email"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Email id"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+            android:inputType="textEmailAddress"
+
+            />
+
+        <TextView
+            android:id="@+id/view_stu_blood_group"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Blood Group"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_blood_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/view_stu_mother_name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Mother Name"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_mother_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+
+
+            />
+
+        <TextView
+            android:id="@+id/view_stu_father_name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Father Name"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_father_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+
+
+            />
+
+        <TextView
+            android:id="@+id/view_stu_parent_phone"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Parent Phone number"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_parent_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+            android:inputType="phone"
+            />
+
+
+            <CheckBox
+                android:id="@+id/married_checkbox"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/married"
+            />
+
+            <TextView
+                android:id="@+id/tv_wife_or_hus_name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Wife or Husband Name"
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/edit_wife_or_hus_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/enter_here_str"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cast"
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/edit_stu_cast"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/enter_here_str"
+                android:inputType="text"
+                />
+
+
+
+
+        <TextView
+            android:id="@+id/view_stu_permanent_address"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Permanent Address"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_permanent_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+            />
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Same as Permanent Address"
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+                />
+
+            <CheckBox
+                android:id="@+id/same_address_checkbox"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/red"
+                />
+
+        <TextView
+            android:id="@+id/view_stu_temp_address"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Local Address"
+            android:textSize="18sp"
+           android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_stu_temp_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_here_str"
+
+            />
+
+
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Image "
+                android:textSize="18sp"
+               android:background="@drawable/aboutshowhead"
+ android:textColor="@color/white"          
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/stu_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_person"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/save_next"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Save and Next"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                />
+            <Button
+                android:id="@+id/save_close"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Save and Close"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

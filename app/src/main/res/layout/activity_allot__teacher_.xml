@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Allot_Teacher_Activity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Teacher Allotment"
+        android:textSize="30sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="20dp"
+        android:background="@drawable/aboutshowbody"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        >
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Section"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/red"
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/sel_section"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:background="@color/grey"
+            android:inputType="textCapCharacters"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:maxLength="1"
+
+            />
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 1 Teacher Id No"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+
+            />
+
+        <EditText
+            android:id="@+id/sub_1_teacher_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="number"
+            />
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 1 Name"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+
+            />
+
+        <EditText
+            android:id="@+id/sub_1_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="textCapCharacters"
+            />
+
+        <CheckBox
+            android:id="@+id/t_s_checkbox_1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:text="Add this"/>
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 2 Teacher Id No"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            />
+
+        <EditText
+            android:id="@+id/sub_2_teacher_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="number"
+
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 2 Name"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+
+            />
+
+        <EditText
+            android:id="@+id/sub_2_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="textCapCharacters"
+
+            />
+
+        <CheckBox
+            android:id="@+id/t_s_checkbox_2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:text="Add this"/>
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 3 Teacher Id No"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            />
+
+        <EditText
+            android:id="@+id/sub_3_teacher_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="number"
+
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 3 Name"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+
+            />
+
+        <EditText
+            android:id="@+id/sub_3_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="textCapCharacters"
+            />
+
+        <CheckBox
+            android:id="@+id/t_s_checkbox_3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:text="Add this"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 4 Teacher Id No"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            />
+
+        <EditText
+            android:id="@+id/sub_4_teacher_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="number"
+
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 4 Name"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+
+            />
+
+        <EditText
+            android:id="@+id/sub_4_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="textCapCharacters"
+            />
+
+
+        <CheckBox
+            android:id="@+id/t_s_checkbox_4"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:text="Add this"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 5 Teacher Id No"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            />
+
+        <EditText
+            android:id="@+id/sub_5_teacher_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="number"
+
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Subject 5 Name"
+            android:textSize="20sp"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+
+            />
+
+        <EditText
+            android:id="@+id/sub_5_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:hint="@string/enter_here"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="textCapCharacters"
+            />
+
+
+        <CheckBox
+            android:id="@+id/t_s_checkbox_5"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:text="Add this"/>
+
+        <Button
+            android:id="@+id/apply_btn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@color/green"
+            android:layout_margin="20dp"
+            android:text="Apply"
+            />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

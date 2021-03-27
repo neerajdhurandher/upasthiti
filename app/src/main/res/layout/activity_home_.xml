@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_Activity"
+    >
+
+
+
+    <TextView
+        android:id="@+id/heading_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Upastithi Database Manager"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/red"
+        android:background="@color/yellow"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading_tv"
+        android:background="@color/black"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="9dp"
+            android:background="@color/white">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/add_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="16dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="#E14C4C">
+
+                    <Button
+                        android:id="@+id/add_stu_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15sp"
+                        android:text="Add Student" />
+
+                    <Button
+                        android:id="@+id/add_teacher_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="195dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15sp"
+                        android:text="Add Teacher" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/modify_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_card"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="150dp"
+
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="16dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@color/blue_3">
+
+
+                    <Button
+                        android:id="@+id/change_sem_button"
+                        android:layout_width="134dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Change Semester" />
+
+                    <Button
+                        android:id="@+id/allot_teacher_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="104dp"
+                        android:layout_marginTop="110dp"
+                        android:layout_marginEnd="77dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Allot Teacher" />
+
+                    <Button
+                        android:id="@+id/modify_stu_details_button"
+                        android:layout_width="157dp"
+                        android:layout_height="59dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="172dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Modify Student Details" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/other_card"
+                android:layout_below="@id/modify_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="16dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/other_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/yellow"
+                    android:layout_margin="5dp"
+                    >
+
+
+                    <Button
+                        android:id="@+id/ct_tt_button"
+                        android:layout_width="134dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="15sp"
+                        android:text="CT Time Table" />
+
+                    <Button
+                        android:id="@+id/tt_modification_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginTop="8dp"
+                        android:text="TT Modification" />
+
+                    <Button
+                        android:id="@+id/add_new_tt_modification_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tt_modification_button"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="209dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Add New One" />
+
+                    <Button
+                        android:id="@+id/partially_tt_modification_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/add_new_tt_modification_button"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="222dp"
+                        android:layout_marginTop="184dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Partially" />
+
+                    <Button
+                        android:id="@+id/permanent_tt_modification_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="215dp"
+                        android:layout_marginTop="126dp"
+                        android:text="Permanent" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/modify_stu_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/yellow"
+                    android:visibility="gone"
+                     >
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/blue"
+                        android:padding="10dp"
+                        android:text="Enter College Admission Number"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/m_edit_stu_clg_add_no"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/tv1"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/white"
+                        android:hint="Enter here"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/process_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_edit_stu_clg_add_no"
+                        android:layout_marginStart="211dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/green"
+                        android:text="Process" />
+
+                    <Button
+                        android:id="@+id/other_btn_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/m_edit_stu_clg_add_no"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="20dp"
+                        android:padding="5dp"
+                        android:background="@color/red"
+                        android:textColor="@color/white"
+                        android:text="Other Services" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

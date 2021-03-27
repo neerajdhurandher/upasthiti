@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/start_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop = "10dp"
+            android:layout_marginBottom="0dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:hint="Time"
+            />
+
+        <EditText
+            android:id="@+id/end_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop = "10dp"
+            android:layout_marginBottom="0dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Time"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.demo1">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo_final"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_final_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ct_tt_show_Activity"></activity>
+        <activity android:name=".show_tt_new_Activity" />
+        <activity android:name=".show_tt_Activity" />
+        <activity android:name=".Add_new_tt_Activity" />
+        <activity android:name=".Take_Attendance_Activity" />
+        <activity android:name=".List_all_stu_in_Class_Activity" />
+        <activity android:name=".Allot_Teacher_Activity" />
+        <activity android:name=".About_Activity" />
+        <activity android:name=".Teacher_Home_Activity" />
+        <activity android:name=".student_Home_Activity" />
+        <activity android:name=".Add_Stream_branch" />
+        <activity android:name=".Add_stu_B_details" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Home_Activity" />
+        <activity android:name=".Login_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

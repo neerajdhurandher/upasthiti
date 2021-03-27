@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Upasthiti</string>
+    <string name="enter_here_str">Enter here</string>
+    <string name="detailsnotAvailabel">Details Not Aailalble</string>
+    <string name="email">Email</string>
+    <string name="dobS">Birthday</string>
+    <string name="branch">Branch</string>
+    <string name="semester">Semester</string>
+    <string name="clg_add_no_">College Admission No</string>
+    <string name="phone_no">Phone No</string>
+    <string name="section">Section</string>
+    <string name="add_year">Admission Year</string>
+    <string name="course">Course</string>
+    <string name="father_name">Father Name</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="parent_phone_no_">Home Phone No</string>
+    <string name="uni_rollno">University Roll No</string>
+    <string name="p_address">Permanet Adress</string>
+    <string name="l_address">Local Address</string>
+    <string name="cast">Cast</string>
+    <string name="something">Something</string>
+    <string name="gender">Gender</string>
+    <string name="married">Married</string>
+    <string name="teacher_id">Teacher Id</string>
+    <string name="department">Department</string>
+    <string name="joining_date">Joining Date</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="enter_here">Enter Here</string>
+
+
+    <string name="login_problem_solve_desc">
+        Go to your phone setting --> Apps --> select --> " Upasthiti " app  --> clear all data --->  then remove " Upasthiti " app form recent open tabs --> reopen  " Upasthiti " app.
+
+    </string>
+    <string name="login_problem_solve_desc_2">     Still you facing problem Comtact to Office section or Contact Neeraj Dhurandher Phone no :- 123456789 , Email :- abc@upasthiti.com
+</string>
+</resources>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Stream_branch"
+
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Upasthiti"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingTop="8dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_cor_red"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/aboutshowbody"
+        android:padding="15sp">
+
+
+
+    <TextView
+        android:id="@+id/sel_course"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Select Course "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/btn_cor_grey"
+
+        />
+    <TextView
+        android:id="@+id/sel_ed_course"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sel_course"
+        android:hint="Click here"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/course_sel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:orientation="vertical"
+        android:layout_below="@id/sel_ed_course"
+        android:visibility="invisible"
+        android:background="@color/yellow"
+        >
+        <TextView
+            android:id="@+id/course_be"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="BE"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/course_poly"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Polytechnic"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/course_pharma"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="pharmacy"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/course_bsc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="BSC"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+   <RelativeLayout
+       android:id="@+id/addno_branch_rl"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/sel_ed_course"
+       >
+
+
+
+    <TextView
+        android:id="@+id/sel_year"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/btn_cor_grey"
+        android:text="Select Admission Year "
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/sel_ed_add_year"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/sel_year"
+        android:textSize="16sp"
+        android:hint="Click here"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/sel_branch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Select Branch "
+        android:textSize="20sp"
+        android:layout_below="@id/sel_ed_add_year"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/btn_cor_grey"
+
+        />
+    <TextView
+        android:id="@+id/sel_ed_branch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sel_branch"
+        android:hint="Click here"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/branch_sel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"
+        android:layout_below="@id/sel_ed_branch"
+        android:background="@color/blue_4"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/branch_cse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="CSE"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/branch_civil"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Civil"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/branch_mech"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Mechanical"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/branch_electrical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Electrical"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/branch_it"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="IT"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/process"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Process"
+        android:layout_below="@id/checkBox"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_cor_green"
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/branch_sel_layout"
+        android:text="Conform" />
+
+
+   </RelativeLayout>
+
+        <Button
+            android:id="@+id/sel_pdf"
+
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/course_sel_layout"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginBottom="10dp"
+            android:text="Select PDF"
+            android:visibility="gone"
+            android:background="@drawable/btn_cor_blue"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
